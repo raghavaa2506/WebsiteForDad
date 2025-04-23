@@ -1,0 +1,66 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0077ff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005fcc;
+  }
+  
+  textarea, input[type='file'], input[type='url'] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #photoPreview img, .pdf-link {
+    margin-top: 10px;
+    max-width: 100%;
+  }
+  
+  .blog-post {
+    background: #e8f0fe;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 5px solid #0077ff;
+    border-radius: 5px;
+  }
+  
+  .dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  .dark-mode .blog-post {
+    background-color: #1e1e1e;
+    border-color: #bb86fc;
+  }
+  

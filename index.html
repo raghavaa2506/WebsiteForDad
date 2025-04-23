@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teacher's Personal Site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Welcome to Sir's Corner</h1>
+      <button id="toggle-dark">Toggle Dark Mode</button>
+    </header>
+
+    <section class="photo-upload">
+      <h2>Upload Photo</h2>
+      <input type="file" id="photoInput" accept="image/*" />
+      <div id="photoPreview"></div>
+    </section>
+
+    <section class="blog">
+      <h2>Post an Announcement</h2>
+      <textarea id="blogInput" placeholder="Write your message..."></textarea>
+      <button onclick="postBlog()">Post</button>
+      <div id="blogPosts"></div>
+    </section>
+
+    <section class="pdf-upload">
+      <h2>Upload PDF or Share Drive Link</h2>
+      <input type="file" id="pdfInput" accept="application/pdf" />
+      <input type="url" id="driveLink" placeholder="Or paste Google Drive link..." />
+      <button onclick="uploadPDF()">Upload</button>
+      <div id="pdfDisplay"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
