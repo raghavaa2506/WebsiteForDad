@@ -9,6 +9,7 @@
   top: 65px;
   left: 20px;
   z-index: 100;
+  animation: fadeInUp 1s ease-out;
 }
 
 .logo-container img {
@@ -69,7 +70,26 @@ main {
   display: flex;
   justify-content: center;
 }
-
+.pnv{
+  background: rgba(63, 221, 105, 0.8);
+  
+  padding:10px;
+  border-radius: 10px;
+  margin-top: 332px;
+  margin-left: 19px;
+  width: 200px;
+  animation: fadeInUp 1s ease-out;
+}
+.pnv_1{
+  background: rgba(63, 221, 105, 0.8);
+  
+  padding:10px;
+  border-radius: 10px;
+  margin-top: -335px;
+  margin-left: 275px;
+  width: 1000px; 
+  animation: fadeInUp 1s ease-out;
+}
 .content {
   background: rgba(255, 255, 255, 0.8);
   
@@ -78,7 +98,7 @@ main {
   max-width:1300px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   animation: fadeInUp 1s ease-out;
-  margin-top: 150px;
+  margin-top: -50px;
 }
 
 /* Fade-in animation */
