@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>PNV Sastry's Site</title>
   <link rel="stylesheet" href="style.css" />
-  
 </head>
 <body>
   <div class="background"></div>
@@ -14,23 +13,64 @@
   <div class="logo-container">
     <img src="images/ssm.png" alt="Logo" />
   </div>
-  <section class ="pnv">
+  
+  <section class="pnv">
     <h3>With the blessings of SS Maharaj</h3>
   </section>
-  <section class ="pnv_1">
+  
+  <section class="pnv_1">
     <h1 style="word-spacing: 50px"> ఆకలై కొంగుపట్టేవారికి అన్నం పెట్టాలయ్యా.</h1>
-      <h3 style="padding-left: 550px ;word-spacing: 10px">----భగవాన్ శ్రీ వెంకయ్య స్వామి</h3>
+    <h3 style="padding-left: 550px ;word-spacing: 10px">----భగవాన్ శ్రీ వెంకయ్య స్వామి</h3>
   </section>
+  
   <header>
     <h1>Developed by PNV Sastry</h1>
   </header>
   
   <main>
     <section class="content">
-     
-      <h1>Welcome!</h2>
+      <h1>Welcome!</h1>
       <p>More to come soon!</p>
-      <p>yfyguidhuhsuilgfasryyifggausklhgfughusgykgasfyklgyiasgyigyigffyi6ur5ERDGHBJL.VNIL;457YTHUIGHIFGYTVYERUGHUKGY78Y</p>
+      
+      <!-- Document Upload Section -->
+      <div class="upload-section">
+        <h2>Document Management</h2>
+        
+        <!-- Text Input Form -->
+        <div class="text-form">
+          <h3>Add Text Content</h3>
+          <form id="textForm">
+            <input type="text" id="textTitle" placeholder="Enter title" required>
+            <textarea id="textContent" placeholder="Enter your text content here..." rows="5" required></textarea>
+            <button type="submit">Save Text</button>
+          </form>
+        </div>
+        
+        <!-- File Upload Form -->
+        <div class="file-form">
+          <h3>Upload Documents</h3>
+          <form id="fileForm" enctype="multipart/form-data">
+            <div class="file-input-container">
+              <input type="file" id="fileInput" name="document" accept=".pdf,.doc,.docx,.txt,.jpg,.jpeg,.png" required>
+              <label for="fileInput" class="file-label">Choose File</label>
+              <span id="fileName">No file selected</span>
+            </div>
+            <input type="text" id="fileDescription" placeholder="Add description (optional)">
+            <button type="submit">Upload Document</button>
+          </form>
+        </div>
+        
+        <!-- Documents List -->
+        <div class="documents-list">
+          <h3>Saved Documents</h3>
+          <div id="documentsList">
+            <p>Loading documents...</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Status Messages -->
+      <div id="statusMessage" class="status-message"></div>
     </section>
   </main>
   
